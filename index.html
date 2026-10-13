@@ -789,8 +789,8 @@ function AboutPage(){
          <p class="muted" style="margin-bottom:6px">Drag the handle to compare before and after.</p>
          <div class="cases">
            ${d.cases.map((c,i)=>`<div class="case"><div class="cmp" id="cmp${i}" style="--p:50">
-             <div class="cmp-l a"><img src="/before${i + 1}.jpeg" alt="Before ${c[0]}" loading="lazy"></div>
-             <div class="cmp-l b"><img src="/after${i + 1}.jpeg" alt="After ${c[0]}" loading="lazy"></div>
+             <div class="cmp-l a"><img src="before${i + 1}.jpeg" alt="Before ${c[0]}" loading="lazy"></div>
+             <div class="cmp-l b"><img src="after${i + 1}.jpeg" alt="After ${c[0]}" loading="lazy"></div>
              <div class="cmp-h"></div><span class="t l">Before</span><span class="t r">After</span>
              <input type="range" min="0" max="100" value="50" aria-label="Compare before and after for ${c[0]}">
            </div><div class="cb"><b>${c[0]}</b><span>${c[1]}</span></div></div>`).join('')}
